@@ -1,4 +1,4 @@
-# Guide to Ch (1) and Ch (2) Problems (With Python)
+# Guide to Ch (2) and Ch (3) Problems (With Python)
 Ahmed Al-Qassas [qassas.ahmed@mau.edu.eg](qassas.ahmed@mau.edu.eg)  
 Spring 2023-24
 ---
