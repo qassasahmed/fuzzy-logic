@@ -75,9 +75,63 @@ print(a_diff_b) # output: array([0.3, 0.25, 0.35, 0.2])
 ```
 
 ### 2. Problem 2.3
-Solved with Python [here](problem-2-3.py)
+Solved with Python and matplotlip [here](problem-2-3.py)  
+![img_1.png](img_1.png)
 
 ## Chapter 3 Problems
+### Problem 3.1
+In the problem described below, our goal is to find P ⨯ T. To solve it we can use `fuzz.cartprod()`. We know how to encode our fuzzy sets an items and mu(s). Below is the solution.  
+![img.png](img.png)
+```python
+import skfuzzy as fuzz
+import numpy as np
 
+items_p = np.array(['x1', 'x2', 'x3', 'x4'])
+mu_p = np.array([0.4, 0.3, 0.5, 0.6])
+
+items_t = np.array(['y1', 'y2', 'y3'])
+mu_t= np.array([0.6, 0.5, 0.4])
+
+cart_prod = fuzz.cartprod(mu_p, mu_t)
+print(cart_prod) 
+#output: 
+# [[0.4 0.4 0.4]
+#  [0.3 0.3 0.3]
+#  [0.5 0.5 0.4]
+#  [0.6 0.5 0.4]]
+```
+### Problem 3.8 
+![img_2.png](img_2.png)
+#### step 1: Encode the relations
+
+```python
+import skfuzzy as fuzz
+import numpy as np
+
+mu_r = np.array([[1, 0.3, 0.1, 0],
+                 [0.2, 1, 0.3, 0.1],
+                 [0, 0.7, 1, 0.2],
+                 [0, 0.1, 0.4, 1]])
+
+mu_s = np.array([[1, 0.4],
+                 [0.5, 1],
+                 [0.3, 0.1],
+                 [0, 0]])
+
+max_min_comp = fuzz.maxmin_composition(mu_r.T, mu_s)
+max_prod_comp = fuzz.maxprod_composition(mu_r.T, mu_s)
+print(max_min_comp)
+# output
+# [[1.  0.4]
+#  [0.5 1. ]
+#  [0.3 0.3]
+#  [0.2 0.1]]
+print(max_prod_comp)
+# [[1.   0.4 ]
+#  [0.5  1.  ]
+#  [0.3  0.3 ]
+#  [0.06 0.1 ]]
+
+```
 
 # Thank You
