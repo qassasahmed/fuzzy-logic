@@ -2,7 +2,7 @@
 Ahmed Al-Qassas [qassas.ahmed@mau.edu.eg](qassas.ahmed@mau.edu.eg)  
 Spring 2023-24
 ---
-## Chapter 1 Problems
+## Chapter 2 Problems
 ### Problem 2.1
 Given two sets A̰ and B̰ shown below, find
 1. A̰ ∩ B̰
@@ -78,7 +78,7 @@ print(a_diff_b) # output: array([0.3, 0.25, 0.35, 0.2])
 ### 2. Problem 2.3
 Solved with Python [here](problem-2-3.py)
 
-## Chapter 2 Problems
+## Chapter 3 Problems
 
 
 # Thank You
