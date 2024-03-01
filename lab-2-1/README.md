@@ -9,7 +9,7 @@ Given two sets A̰ and B̰ shown below, find
 2. A̰ ∪ B̰
 3. A̅, B̅
 4. A - B  
-![img_1.png](img_1.png)
+![img_1.png](figs/img_1.png)
 
 ###### 1.  A̰ ∩ B̰
 First we need to encode these two fuzzy sets using `numpy`. Then we will use `skfuzzy` to calculate the **intersection**. In, `skfuzzy` the function `fuzzy_and` is used to find the intersection.
