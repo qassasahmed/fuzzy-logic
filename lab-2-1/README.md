@@ -1,4 +1,4 @@
-# Solving Ch (1) and Ch (2) Problems (With Python)
+# Guide to Ch (1) and Ch (2) Problems (With Python)
 Ahmed Al-Qassas [qassas.ahmed@mau.edu.eg](qassas.ahmed@mau.edu.eg)  
 Spring 2023-24
 ---
@@ -23,7 +23,7 @@ items = np.array({1, 2, 3, 4})
 mu_a = np.array([0.4, 0.35, 0.5, 0.6])
 mu_b = np.array([0.7, 0.75, 0.65, 0.8])
 a_intersect_b = fuzz.fuzzy_and(items, mu_a, items, mu_b)
-print(a_intersect_b[1]) # output: [0.4 0.35 0.5 0.6])
+print(a_intersect_b[1]) # output: [0.4, 0.35, 0.5, 0.6])
 ```
 
 ###### 2. A̰ ∪ B̰
@@ -76,6 +76,9 @@ print(a_diff_b) # output: array([0.3, 0.25, 0.35, 0.2])
 ```
 
 ### 2. Problem 2.3
-Solved with python [here](problem-2-3.py)
+Solved with Python [here](problem-2-3.py)
 
-#Thank You
+## Chapter 2 Problems
+
+
+# Thank You
