@@ -8,7 +8,8 @@ Given two sets A̰ and B̰ shown below, find
 1. A̰ ∩ B̰
 2. A̰ ∪ B̰
 3. A̅, B̅
-4. A - B  
+4. A - B   
+
 ![img_1.png](figs/img_1.png)
 
 ###### 1.  A̰ ∩ B̰
@@ -121,12 +122,13 @@ mu_s = np.array([[1, 0.4],
 max_min_comp = fuzz.maxmin_composition(mu_r.T, mu_s)
 max_prod_comp = fuzz.maxprod_composition(mu_r.T, mu_s)
 print(max_min_comp)
-# output
+# output:
 # [[1.  0.4]
 #  [0.5 1. ]
 #  [0.3 0.3]
 #  [0.2 0.1]]
 print(max_prod_comp)
+# output:
 # [[1.   0.4 ]
 #  [0.5  1.  ]
 #  [0.3  0.3 ]
