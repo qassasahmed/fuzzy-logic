@@ -67,7 +67,6 @@ items = np.array({1, 2, 3, 4})
 
 mu_a = np.array([0.4, 0.35, 0.5, 0.6])
 
-
 mu_b = np.array([0.7, 0.75, 0.65, 0.8])
 mu_b_complement = fuzz.fuzzy_not(mu_b)
 
