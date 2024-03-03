@@ -26,11 +26,17 @@ a_intersect_b = fuzz.fuzzy_and(a, gauss_mu_a, b, gauss_mu_b)
 #          linewidth=3,
 #          color='#0072e4')
 
+b_complement = fuzz.fuzzy_not(gauss_mu_b)
+plt.plot(b, b_complement,
+         linestyle="--",
+         color='red',
+         label='B\u0305')
+
 a_diff_b = fuzz.fuzzy_and(a, gauss_mu_a, b, fuzz.fuzzy_not(gauss_mu_b))
-# plt.plot(a_diff_b[0], a_diff_b[1],
-#          label="A\u0330 - B\u0330",
-#          linewidth=3,
-#          color='#0072e4')
+plt.plot(a_diff_b[0], a_diff_b[1],
+         label="A\u0330 - B\u0330",
+         linewidth=3,
+         color='#0072e4')
 
 de_morgan_a_union_b = fuzz.fuzzy_and(a, fuzz.fuzzy_not(gauss_mu_a), b, fuzz.fuzzy_not(gauss_mu_b))
 # plt.plot(de_morgan_a_union_b[0],
